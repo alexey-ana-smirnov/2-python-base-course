@@ -55,6 +55,8 @@ class Matrix:
                 result.append(res)
             return Matrix(result)
 
+    def __rmul__(self, other):
+        return self.__mul__(other)
 
 m1 = Matrix([[1,2],[3,4],[2,4]])
 m2 = Matrix([[5,6,7],[7,8,9]])
