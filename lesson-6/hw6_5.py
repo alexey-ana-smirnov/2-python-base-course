@@ -4,28 +4,28 @@ class Stationary:
 
     title = 'Канцелярская принадлежность'
 
-    def Draw(self):
+    def draw(self):
         print("Запуск отрисовки")
 
 class Pen(Stationary):
 
     title = 'Ручка'
 
-    def Draw(self):
+    def draw(self):
         print("Рисование ручкой")
 
 class Pencil(Stationary):
 
     title = 'Карандаш'
 
-    def Draw(self):
+    def draw(self):
         print("Рисование карандашом")
 
 class Handle(Stationary):
 
     title = 'Маркер'
 
-    def Draw(self):
+    def draw(self):
         print("Рисование маркером")
 
 
@@ -34,8 +34,8 @@ obj2=Pen()
 obj3=Pencil()
 obj4=Handle()
 
-obj1.Draw()
-obj2.Draw()
-obj3.Draw()
-obj4.Draw()
+obj1.draw()
+obj2.draw()
+obj3.draw()
+obj4.draw()
 

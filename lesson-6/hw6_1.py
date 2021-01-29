@@ -13,21 +13,21 @@ class TrafficLight:
         self.__color = 0
         self.__timestamp = time()
 
-    def Running(self,color):
+    def running(self,color):
         i=(self.__color+1)%4
         diff = time() - self.__timestamp
         if TrafficLight.__states[i]==color and diff>=TrafficLight.__timeouts[TrafficLight.__states[self.__color]]:
             self.__color=i
             self.__timestamp = time()
 
-    def GetColor(self):
+    def getcolor(self):
         return self.__states[self.__color]
 
 tl1 = TrafficLight()
 
 while True:
     sleep(1)
-    tl1.Running('Red')
-    tl1.Running('Yellow')
-    tl1.Running('Green')
-    print(f"{ctime(time())}: {tl1.GetColor()}")
+    tl1.running('Red')
+    tl1.running('Yellow')
+    tl1.running('Green')
+    print(f"{ctime(time())}: {tl1.getcolor()}")

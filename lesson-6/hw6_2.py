@@ -9,9 +9,9 @@ class Road:
         self.__length = float(length)
         self.__width = float(width)
 
-    def Expense(self):
+    def expense(self):
         return self.__length*self.__width*Road.__consumption
 
 r = Road(1000,10)
 
-print(r.Expense())
+print(r.expense())
